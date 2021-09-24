@@ -1,0 +1,16 @@
+<div class="lister_comp">
+    <h1>{{ title }}</h1>
+    <div id="list_row" class="row left-align">
+      <Loading v-if="flag_loading" id="loading" />
+      <div class="col s12 m12 l12 collection" >
+        <div v-for="s in listDataSecciones" v-bind:key="s.seccion" :id="'section'+s.seccion" class="section scrollspy">
+          <a v-for="d in s.list_data" v-bind:key="d.id" :href="'#/'+page+'/'+d.id" v-bind:class = "d.id==0?'active':''" class="collection-item">{{ d.name }}</a>
+        </div>
+      </div>
+      <div class="buttons_scrollspy" style="position: fixed;">
+          <ul class="table-of-contents" >
+            <li v-for="d in secciones" @click="loadNewData(d.seccion, d.count_loop)"><a :href="'#section'+d.seccion"> </a></li>
+          </ul>
+      </div>
+    </div>
+  </div>

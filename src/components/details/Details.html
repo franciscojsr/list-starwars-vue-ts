@@ -1,0 +1,13 @@
+<div class="details_comp">
+    <h1>{{ details }}</h1>
+    <div id="list_row" class="row left-align">
+      <Loading v-if="flag_loading" id="loading" />
+      <div class="col s12 m12 l12" >
+        <div class="col s12 m12 l12 collection" >
+            <div v-for="d in listData" v-bind:key="d.id" class="section">
+                <a class="collection-item"><span>{{ d.label }}:</span><span class="text">{{ d.text }}</span></a>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>

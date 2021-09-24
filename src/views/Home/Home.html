@@ -1,0 +1,19 @@
+<div class="home">
+    <h1>
+      WELCOME TO STARWARS 
+    </h1>
+    <div>
+      <div id="list" class="row left-align">
+        <div class="col s12 m12 l12 collection">
+            <div class="section" v-host-listener:click="showHidePathBack()">
+                <a href="javascript:void(0)" class="collection-item avatar checkback" v-for="d in listData" v-bind:key="d.id" @click="goToSection(d.router)">
+                    <i class="material-icons circle checkback">
+                        <i class="checkback fab fa-jedi-order fa-2x"></i>
+                    </i>
+                    <div class="checkback">{{ d.text }}</div>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>

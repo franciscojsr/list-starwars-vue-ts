@@ -1,0 +1,35 @@
+
+#navbar{
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    
+    #container_goback{
+        position: fixed;
+        // top:12px;
+        top:75px;
+        // left:12%;
+        right:0px;
+        height: 64px;
+        width: 64px;
+        #goback{
+            cursor: pointer;
+            .i{
+                font-size: 32px !important;
+            }
+        }
+        #goback > i:hover{
+            color: #000;
+            background: #ddd;
+        }
+    }
+
+}
+
+
+#navbar > .nav{
+    background-image: url('./../../assets/images/fondo_space_03.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
