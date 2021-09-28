@@ -77,7 +77,7 @@
           }
         }
         else { // Para el resto de páginas
-            request = await httpService.getAllPeople();
+            request = await httpService.getAll();
             data = request.data;
             nextPage = data.next;
             listData.value = data.results;

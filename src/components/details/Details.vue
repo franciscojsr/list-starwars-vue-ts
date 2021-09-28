@@ -39,7 +39,7 @@
 
             async function detailRequest() {
                 let httpService = new HttpService(path);
-                let request = await httpService.getAllPeople();
+                let request = await httpService.getAll();
                 let list_data = request.data;
                 for(let ld in list_data) {
                     if( ld!='homeworld' && ld!='films' && ld!='species' &&
