@@ -28,7 +28,7 @@ class HttpService {
   // }
 
   getAll(): Promise<any> {
-    return http.get<any>("/"+this.path);
+    return http.get<any[]>("/"+this.path);
   }
 
   get(id: any): Promise<any> {

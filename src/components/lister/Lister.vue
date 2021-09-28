@@ -54,7 +54,7 @@
        */
       async function loopPagesRequest(page: string, seccion: number, flag_changes: boolean) {
         let httpService = new HttpService(page);
-        let request = await httpService.getAllPeople();
+        let request = await httpService.getAll();
         let data = request.data;
 
         // Para la primera página
